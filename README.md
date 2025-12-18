@@ -6,7 +6,6 @@
   <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
   <img src="https://img.shields.io/badge/Material_3-757575?style=for-the-badge&logo=materialdesign&logoColor=white" />  
   <img src="https://img.shields.io/badge/ExoPlayer-Media3-FF6F00?style=for-the-badge&logo=googleplay&logoColor=white" />
-  <img src="https://img.shields.io/badge/MediaStore-Scoped_Storage-4CAF50?style=for-the-badge" />
 </div>
 
 ---
@@ -60,33 +59,34 @@ Proyek ini bertujuan untuk mendemonstrasikan kemampuan dalam:
 
 ---
 
-## Struktur Proyek
-Aplikasi ini mengikuti standar arsitektur UI yang terorganisir:
-* `ui/` : Berisi komponen Composable untuk setiap layar (Home, Gallery, Audio, Video).
-* `navigation/` : Pengaturan rute dan perpindahan antar screen.
-* `util/` : Logic helper untuk pengelolaan file dan MediaStore.
-* `theme/` : Definisi warna, tipografi, dan tema Material 3.
+## Struktur Projek
+
+Berikut adalah struktur direktori pada projek Praktikum #8 ini:
+
+```text
+p8_multimedia_nimanda/
+├── MainActivity.kt
+├── ui/
+│   ├── gallery/
+│   │   └── CameraGalleryScreen.kt
+│   ├── home/
+│   │   └── HomeScreen.kt
+│   ├── player/
+│   │   └── AudioPlayerScreen.kt
+│   ├── recorder/
+│   │   └── AudioRecorderScreen.kt
+│   ├── video/
+│   │   └── VideoPlayerScreen.kt
+│   ├── theme/
+│   │   ├── Color.kt
+│   │   ├── Theme.kt
+│   │   └── Type.kt
+│   ├── NavGraph.kt
+│   └── Screens.kt
+└── util/
+    ├── FileManagerUtility.kt
+    └── VideoFileData.kt
+```
 
 ---
 
-##  Cara Menjalankan
-1.  Clone repository ini:
-    ```bash
-    git clone [https://github.com/username/praktikum8-multimedia.git](https://github.com/username/praktikum8-multimedia.git)
-    ```
-2.  Buka project di **Android Studio**.
-3.  Pastikan menggunakan **JDK 17**.
-4.  Hubungkan Real Device (disarankan untuk fitur Kamera/Audio) atau jalankan Emulator.
-5.  Klik **Run 'app'**.
-
----
-
-## 📝 Pengelolaan File
-Aplikasi ini mendukung manajemen file multimedia yang aman meliputi:
-1.  **Pengambilan Daftar File:** Membaca metadata file multimedia.
-2.  **Pemutaran Media:** Integrasi sistem playback yang responsif.
-3.  **File Operations:** Fitur untuk menghapus dan mengubah nama (*rename*) file secara langsung.
-
----
-**Dosen Pengampu:** Muhayat, M.IT  
-**Status:** Praktikum Selesai ✅
