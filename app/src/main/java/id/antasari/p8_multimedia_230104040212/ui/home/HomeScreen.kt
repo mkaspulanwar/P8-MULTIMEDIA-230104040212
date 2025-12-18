@@ -60,7 +60,7 @@ fun HomeScreen(navController: NavController) {
                 Spacer(Modifier.height(24.dp))
                 // LOGO IMAGE
                 Image(
-                    painter = painterResource(id = R.drawable.multimedia),
+                    painter = painterResource(id = R.drawable.multimedia1),
                     contentDescription = "App Logo",
                     modifier = Modifier
                         .size(96.dp)
@@ -150,7 +150,7 @@ fun HeroCard(modifier: Modifier = Modifier) {
         elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
     ) {
         Image(
-            painter = painterResource(id = R.drawable.multimedia),
+            painter = painterResource(id = R.drawable.multimedia2),
             contentDescription = "Multimedia Hero",
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxSize()
