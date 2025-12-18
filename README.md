@@ -63,8 +63,8 @@ Proyek ini bertujuan untuk mendemonstrasikan kemampuan dalam:
 
 Berikut adalah struktur direktori pada projek Praktikum #8 ini:
 
-```text
-p8_multimedia_nimanda/
+```bash
+P8_MULTIMEDIA_230104040212/
 ├── MainActivity.kt
 ├── ui/
 │   ├── gallery/
