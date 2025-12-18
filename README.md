@@ -90,19 +90,15 @@ P8_MULTIMEDIA_230104040212/
 
 ---
 
----
-
 ## Bukti Screenshots
 Berikut adalah dokumentasi antarmuka aplikasi dalam berbagai mode multimedia:
 
 | Camera & Gallery | Image Preview (Zoom) | Audio Recorder |
 | :---: | :---: | :---: |
-| <img src="bukti/1.jpeg" width="250"> | <img src="bukti/2.jpeg" width="250"> | <img src="screenshots/screen3.png" width="250"> |
+| <img src="bukti/1.jpeg" width="250"> | <img src="bukti/2.jpeg" width="250"> | <img src="bukti/3.jpeg" width="250"> |
 
 | Audio Player | Video Player | Fullscreen Video |
 | :---: | :---: | :---: |
-| <img src="screenshots/screen4.png" width="250"> | <img src="screenshots/screen5.png" width="250"> | <img src="screenshots/screen6.png" width="250"> |
+| <img src="bukti/4.jpeg" width="250"> | <img src="bukti/5.jpeg" width="250"> | <img src="bukti/6.jpeg" width="250"> |
 
-> **Note:** Pastikan kamu menyimpan file gambar di dalam folder \`screenshots/\` di root repository kamu dan sesuaikan nama filenya (misal: \`screen1.png\`, dst).
-EOF
-
+---
