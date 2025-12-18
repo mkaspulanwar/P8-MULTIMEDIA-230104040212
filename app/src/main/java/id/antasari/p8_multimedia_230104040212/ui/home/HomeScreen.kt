@@ -52,12 +52,12 @@ fun HomeScreen(navController: NavController) {
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(220.dp) // Sedikit lebih tinggi
+                .height(250.dp) // Sedikit lebih tinggi
                 .background(gradient),
             contentAlignment = Alignment.TopCenter
         ) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Spacer(Modifier.height(24.dp))
+                Spacer(Modifier.height(54.dp))
                 // LOGO IMAGE
                 Image(
                     painter = painterResource(id = R.drawable.multimedia1),
