@@ -93,11 +93,11 @@ P8_MULTIMEDIA_230104040212/
 ## Bukti Screenshots
 Berikut adalah dokumentasi antarmuka aplikasi dalam berbagai mode multimedia:
 
-| Camera & Gallery | Image Preview (Zoom) | Audio Recorder |
+| Dashboard | Audio Recorder | Audio Player |
 | :---: | :---: | :---: |
 | <img src="bukti/1.jpeg" width="250"> | <img src="bukti/2.jpeg" width="250"> | <img src="bukti/3.jpeg" width="250"> |
 
-| Audio Player | Video Player | Fullscreen Video |
+| Video Player | Camera & Galery | Video & Photo |
 | :---: | :---: | :---: |
 | <img src="bukti/4.jpeg" width="250"> | <img src="bukti/5.jpeg" width="250"> | <img src="bukti/6.jpeg" width="250"> |
 
