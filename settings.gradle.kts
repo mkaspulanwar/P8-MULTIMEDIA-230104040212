@@ -1,22 +1,21 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
-    }
-    plugins {
-        id("com.android.application") version "8.13.1"
-        id("com.android.library") version "8.13.1"
-        id("org.jetbrains.kotlin.android") version "2.0.21"
-//        id("org.jetbrains.kotlin.plugin.compose") version "2.0.21" // WAJIB untuk Kotlin 2.0+
+        gradlePluginPortal()
     }
 }
-
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        mavenCentral()
         google()
+        mavenCentral()
     }
 }
 rootProject.name = "p8_multimedia_230104040212"
