@@ -12,32 +12,29 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
+    primary = BrandLightBlue,
+    secondary = BrandDarkBlue,
     tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = BrandLightBlue,     // Menggunakan Biru Terang sebagai warna utama
+    secondary = BrandDarkBlue,    // Menggunakan Biru Tua sebagai sekunder
+    background = BrandBackground, // Background aplikasi biru muda
+    surface = SurfaceWhite,
 
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    /* Other default colors to override */
+    onPrimary = SurfaceWhite,
+    onSecondary = SurfaceWhite,
+    onBackground = TextDark,
+    onSurface = TextDark,
 )
 
 @Composable
 fun P8_multimedia_230104040212Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    // Ubah dynamicColor ke FALSE agar warna logo-mu yang dipakai, bukan warna wallpaper HP user
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -45,7 +42,6 @@ fun P8_multimedia_230104040212Theme(
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
-
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
